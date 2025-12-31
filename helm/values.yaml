@@ -1,1 +1,8 @@
-
+replicaCount: 3
+image:
+  repository: myrepo/api
+  tag: latest
+resources:
+  limits:
+    cpu: 500m
+    memory: 512Mi
