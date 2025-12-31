@@ -1,1 +1,5 @@
-
+build:
+  stage: build
+  script:
+    - docker build -t myrepo/api:$CI_COMMIT_SHA .
+    - docker push myrepo/api:$CI_COMMIT_SHA
